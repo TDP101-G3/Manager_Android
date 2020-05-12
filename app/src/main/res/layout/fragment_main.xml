@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment" >
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:singleLine="false"
+        android:text="@string/textManager"
+        android:textColor="#1465C0"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btCustomers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/main_button"
+        android:text="@string/textCustomer"
+        android:textColor="#1565C0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvUser"
+        app:layout_constraintTop_toBottomOf="@+id/tvUser" />
+
+    <Button
+        android:id="@+id/btDrivers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/main_button"
+        android:text="@string/textDriver"
+        android:textColor="#1565C0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/btCustomers"
+        app:layout_constraintTop_toTopOf="@+id/btCustomers" />
+
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/textData"
+        android:textColor="#1465C0"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/tvUser"
+        app:layout_constraintTop_toBottomOf="@+id/btCustomers" />
+
+    <Button
+        android:id="@+id/btCustomersOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/main_button"
+        android:text="@string/textCustomerOrder"
+        android:textColor="#1565C0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvData"
+        app:layout_constraintTop_toBottomOf="@+id/tvData" />
+
+    <Button
+        android:id="@+id/btDriversOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/main_button"
+        android:text="@string/textDriverOrder"
+        android:textColor="#1565C0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/btCustomersOrders"
+        app:layout_constraintTop_toTopOf="@+id/btCustomersOrders" />
+
+    <Button
+        android:id="@+id/btIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/main_button"
+        android:text="@string/textIncome"
+        android:textColor="#1565C0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/btDriversOrders"
+        app:layout_constraintTop_toTopOf="@+id/btDriversOrders" />
+
+    <TextView
+        android:id="@+id/tvService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/textService"
+        android:textColor="#1465C0"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/tvData"
+        app:layout_constraintTop_toBottomOf="@+id/btCustomersOrders" />
+
+    <Button
+        android:id="@+id/btAppQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/main_button"
+        android:text="@string/textApp"
+        android:textColor="#1565C0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvService"
+        app:layout_constraintTop_toBottomOf="@+id/tvService" />
+
+    <Button
+        android:id="@+id/btUserQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/main_button"
+        android:text="@string/textUser"
+        android:textColor="#1565C0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/btAppQ"
+        app:layout_constraintTop_toTopOf="@+id/btAppQ" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#1565C0"
+        app:layout_constraintStart_toStartOf="@+id/tvUser"
+        app:layout_constraintTop_toBottomOf="@+id/tvUser" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#1565C0"
+        app:layout_constraintStart_toStartOf="@+id/tvData"
+        app:layout_constraintTop_toBottomOf="@+id/tvData" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#1565C0"
+        app:layout_constraintStart_toStartOf="@+id/tvService"
+        app:layout_constraintTop_toBottomOf="@+id/tvService" />
+</androidx.constraintlayout.widget.ConstraintLayout>
